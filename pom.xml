@@ -12,6 +12,7 @@
         <module>eureka-client-provider</module>
         <module>eureka-server-slave1</module>
         <module>eureka-server-slave2</module>
+        <module>eureka-client-invoker</module>
     </modules>
     <packaging>pom</packaging>
 

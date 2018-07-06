@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bolocloud</groupId>
-    <artifactId>eureka-client-call</artifactId>
+    <artifactId>eureka-client-invoker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>eureka-client-call</name>
+    <name>eureka-client-invoker</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -26,6 +26,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
