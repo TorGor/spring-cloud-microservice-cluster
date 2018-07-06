@@ -1,6 +1,6 @@
 package com.bolocloud.eurekaclientcall.controller;
 
-import com.netflix.loadbalancer.ILoadBalancer;
+import com.bolocloud.eurekaclientcall.service.FeignService;
 import com.netflix.loadbalancer.ZoneAwareLoadBalancer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -24,6 +24,9 @@ public class RestTemController {
     @Autowired
     private SpringClientFactory factory;
 
+    @Autowired
+    private FeignService feignClient;
+
     @GetMapping(value = "/call")
     public String call(){
         String msg = template.getForObject("http://eureka-provider/provider",String.class);
@@ -45,4 +48,12 @@ public class RestTemController {
         msg += "====="+lb2.getRule().getClass().getName();
         return msg;
     }
+
+    @GetMapping("feigncall")
+    public String feigncall(){
+        String msg = feignClient.getHello();
+        return msg;
+    }
+
+
 }

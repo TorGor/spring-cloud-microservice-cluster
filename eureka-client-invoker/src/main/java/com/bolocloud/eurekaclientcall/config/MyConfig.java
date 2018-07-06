@@ -11,4 +11,7 @@ public class MyConfig {
     public IRule getRule(){
         return new DefineRibbonRule();
     }
+
+
+
 }

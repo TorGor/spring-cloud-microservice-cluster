@@ -1,4 +1,4 @@
-package com.bolocloud.eurekaclientprovider;
+package com.bolocloud.eurekaclientprovider1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-//@EnableEurekaClient
-public class EurekaClientProviderApplication {
+public class EurekaClientProvider1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientProviderApplication.class, args);
+        SpringApplication.run(EurekaClientProvider1Application.class, args);
     }
 }
