@@ -14,6 +14,7 @@
         <module>eureka-client-provider1</module>
         <module>eureka-client-provider2</module>
         <module>eureka-client-invoker</module>
+        <module>hystrix-dashboard</module>
     </modules>
     <packaging>pom</packaging>
 
