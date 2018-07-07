@@ -1,6 +1,7 @@
 package com.bolocloud.eurekaclientcall.controller;
 
 import com.bolocloud.eurekaclientcall.service.FeignService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.loadbalancer.ZoneAwareLoadBalancer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -28,6 +29,7 @@ public class RestTemController {
     private FeignService feignClient;
 
     @GetMapping(value = "/call")
+    @HystrixCommand
     public String call(){
         String msg = template.getForObject("http://eureka-provider/provider",String.class);
         return msg;
