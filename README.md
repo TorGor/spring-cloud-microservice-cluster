@@ -7,16 +7,14 @@
 * eureka-client-provider1 (cluster for eureka client provider)
 * eureka-client-provider2 (cluster for eureka client provider)
 
-
-![图片名称](http://gitcafe.com/image.png)
-
-[链接名称](http://gitcafe.com)
+Welcome to [MY BLOG](https://torgor.github.io)!
 
 > EUREKA
 >> EUREKA SERVER + EUREKA SERVER
 ***
 1.`eureka-server-slave1`
 This is a eureka server
+![console](https://torgor.github.io/assets/images/springcloud/eureka-console-8761.png)
 * first you should add the dependence for project
 ```ruby
   <dependency>
