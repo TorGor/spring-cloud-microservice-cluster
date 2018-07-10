@@ -1,4 +1,4 @@
-# Spring cloud + sprnig boot2.0.3 
+# Spring cloud + sprnig boot2.0.3 ([MY BLOG](https://torgor.github.io)!)
 ## eureka+ribbon+feign+hystrix+zuul
 
 ## project list
@@ -7,10 +7,10 @@
 * eureka-client-provider1 (cluster for eureka client provider)
 * eureka-client-provider2 (cluster for eureka client provider)
 
-Welcome to [MY BLOG](https://torgor.github.io)!
+
 
 > EUREKA
->> EUREKA SERVER + EUREKA SERVER
+>> EUREKA SERVER + EUREKA CLIENT
 ***
 1.`eureka-server-slave1`
 This is a eureka server
