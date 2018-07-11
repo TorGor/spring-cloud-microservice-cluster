@@ -25,6 +25,7 @@ This is a eureka client for config server
 ```
 * add `@EnableConfigServer` for the `Application`
 * add param see `application.properties`
+* see the actuator you must with path `/actuator` like `/actuator/info`
 
 
 

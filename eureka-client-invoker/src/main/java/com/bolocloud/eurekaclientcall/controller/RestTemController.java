@@ -4,6 +4,7 @@ import com.bolocloud.eurekaclientcall.service.FeignService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.loadbalancer.ZoneAwareLoadBalancer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.cloud.netflix.ribbon.SpringClientFactory;
@@ -27,6 +28,9 @@ public class RestTemController {
 
     @Autowired
     private FeignService feignClient;
+
+    @Value("${myname}")
+    private String myname;
 
     @GetMapping(value = "/call")
     @HystrixCommand
@@ -54,7 +58,7 @@ public class RestTemController {
     @GetMapping("feigncall")
     public String feigncall(){
         String msg = feignClient.getHello();
-        return msg;
+        return msg+":"+ myname;
     }
 
 
