@@ -6,9 +6,10 @@
 * eureka-server-slave2 (cluster for eureka server)
 * eureka-client-provider1 (cluster for eureka client provider)
 * eureka-client-provider2 (cluster for eureka client provider)
-* eureka-client-invoker (cluster for eureka client invoker )
+* eureka-client-invoker (cluster for eureka client invoker /config client)
 * eureka-client-zuul (cluster for eureka client gateway)
 * hystrix-dashboard (hystrix dashboard)
+* eureka-client-config-server (cluster for eureka client config server)
 
 
 > EUREKA
