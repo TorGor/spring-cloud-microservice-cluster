@@ -17,7 +17,7 @@ public class DefineRibbonRule implements IRule {
         Random r = new Random();
         int randomNum = r.nextInt(10);
         List<Server> servers = lb.getAllServers();
-        if(randomNum > 8) {
+        if(randomNum > 7) {
             Server s = getServerByPort(servers, 8081);
             return s;
         }
