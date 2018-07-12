@@ -32,6 +32,10 @@ public class RestTemController {
     @Value("${myname}")
     private String myname;
 
+    @Value("${myconfig.remote.invoker}")
+    private String invoker;
+
+
     @GetMapping(value = "/call")
     @HystrixCommand
     public String call(){
@@ -58,7 +62,7 @@ public class RestTemController {
     @GetMapping("feigncall")
     public String feigncall(){
         String msg = feignClient.getHello();
-        return msg+":"+ myname;
+        return msg+":"+ myname + "-"+invoker;
     }
 
 

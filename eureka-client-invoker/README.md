@@ -20,6 +20,9 @@ This is a eureka client for config client
 ```
 * you must creat `bootstrap.properties` for project .add param see `bootstrap.properties`
 * see the actuator you must with path `/actuator` like `/actuator/info`
+* if you want surport `application.properties` params like `myconfig=${value}`,
+you must set `spring.profiles.active=test/dev/prod` ,the value depend you config file ,
+or you will confront `Could not resolve place`
 
 
 
